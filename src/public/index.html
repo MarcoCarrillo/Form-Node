@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Nodemailer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="/main.css" />
+</head>
+<body>
+    
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="/send-email" method="POST">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput0" class="form-label">Nombre</label>
+                                <input type="text" name="name" class="form-control" id="exampleFormControlInput0" placeholder="Nombre completo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@examplecom">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput2" class="form-label">Telefono</label>
+                                <input type="text" name="phone" class="form-control" id="exampleFormControlInput2" placeholder="Tu numero telefonico">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Tu mensaje</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3"></textarea>
+                            </div>
+                            
+                            <button class="btn btn-primary">
+                                Enviar
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+</body>
+</html>
