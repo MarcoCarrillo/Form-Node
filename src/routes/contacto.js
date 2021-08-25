@@ -10,13 +10,11 @@ router.post('/', async (req, res) => {
         const {nombre, email, telefono, mensaje} = req.body;
 
         contentHTML = `
-            <p>Cliente</p>
-            <ul>
-                <li> <p>Nombre: ${nombre}</p> </li>
-                <li><p>Correo electronico: ${email}</p> </li>
-                <li><p>Telefono: ${telefono}</p></li>
-            </ul>
-            <p>${mensaje}</p>
+            <h1>🥶Cliente Nuevo🥶</h1><br>
+            <h3>Nombre: ${nombre}</h3><br> 
+            <h3>Correo electronico: ${email}</h3><br> 
+            <h3>Telefono: ${telefono}</h3><br>
+            <h3>Mensaje: ${mensaje}</h3><br>
         `;
         
         const transporter = nodemailer.createTransport({

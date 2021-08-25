@@ -1,12 +1,14 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-
+const cors = require('cors');
 
 
 //Habilitar express.json para las solicitudes de POST y reconoce que es .json el objeto del request, se pueden hacer los requests con content-type: application.json desde headers en postman
 app.use(express.json({extends: true}));
 
+//habilitar cors
+app.use(cors());
 
 app.use(express.urlencoded({extended: false})); //Entender los datos del form
 
